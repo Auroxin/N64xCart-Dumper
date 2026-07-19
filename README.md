@@ -58,8 +58,11 @@ Typical build flow:
 
 ```sh
 cd firmware/N64xCartDumper
-cmake -S . -B build
-cmake --build build
+mkdir build
+cd build
+cmake ..
+cmake --build .
+(optional) put pico in bootloader mode and copy the N64xCartDumper.uf2 to the attached drive.
 ```
 
 You will need a working Raspberry Pi Pico / RP2040 build environment, including the Pico SDK, CMake, a supported ARM GCC toolchain, and the TinyUSB dependencies used by this project.
