@@ -16,8 +16,9 @@ The device appears to the computer as a USB mass storage device. The virtual FAT
 
 ### Known Issues – CIC Detection
 
-
-### Planned Fix
+The current hardware revision (v1.x) does not provide a clock signal to the CIC (Copy Integrity Check) chip inside the cartridge. Under normal operation, this clock signal is supplied by the N64 console itself. Since the clock is not connected in this hardware version, the CIC chip on the cartridge cannot function properly during operation.
+Impact
+Save backup functionality: ✅ NOT affected. The CIC error does not interfere with the ability to read or back up save data from the cartridge. You can safely use the backup feature.
 A future hardware revision is planned to address this issue. The updated design will include the necessary clock routing to the CIC chip, allowing proper CIC detection and verification.
 
 ## Origin and Credits
