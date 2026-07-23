@@ -15,10 +15,10 @@ This repository contains:
 The device appears to the computer as a USB mass storage device. The virtual FAT16 disk exposes N64 cartridge data and save data files such as ROM, EEPROM, SRAM and FlashRAM where supported by the firmware.
 
 ### Known Issues – CIC Detection
-Current Hardware Limitation (v1.x)
+
 The current hardware revision (v1.x) does not provide a clock signal to the CIC (Copy Integrity Check) chip inside the cartridge. Under normal operation, this clock signal is supplied by the N64 console itself. Since the clock is not connected in this hardware version, the CIC chip on the cartridge cannot function properly during operation.
 
-Impact
+#### Impact
 Save backup functionality: ✅ NOT affected. The CIC error does not interfere with the ability to read or back up save data from the cartridge. You can safely use the backup feature.
 CIC detection / verification: ❌ The CIC chip will not respond correctly. As a result, the TXT log file generated during the backup process will report a CIC-related error. This is expected behavior given the current hardware design.
 ### Planned Fix
