@@ -23,6 +23,7 @@ This project exists because of prior open source work. Please visit and support 
 
 - DreamDumper64 hardware project by khill25: https://github.com/khill25/Dreamdumper
 - `DrmDmp64_mass` firmware by nopjne: https://github.com/nopjne/drmdmp64_mass
+- Special thanks to [selunders](https://github.com/selunders/N64xCart-Dumper/tree/read_eeprom) for identifying the hardware v1.1 issues affecting CIC information and EEPROM reading, and for providing a detailed repair proposal that helped guide the updated hardware design.
 - TinyUSB USB stack: https://github.com/hathach/tinyusb
 - Raspberry Pi Pico / RP2040 SDK ecosystem: https://github.com/raspberrypi/pico-sdk
 
