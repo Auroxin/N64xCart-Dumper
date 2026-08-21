@@ -1,17 +1,18 @@
 # N64xCart Dumper
 
-N64xCart Dumper is an open hardware / firmware project for dumping Nintendo 64 cartridges as a USB mass storage device. It is based on the excellent DreamDumper64 project and the `DrmDmp64_mass` firmware, with changes for the N64xCart Dumper hardware.
+N64xCart Dumper is a source-available hardware / firmware project for dumping Nintendo 64 cartridges as a USB mass storage device. It is based on the excellent DreamDumper64 project and the `DrmDmp64_mass` firmware, with changes for the N64xCart Dumper hardware.
 
 <p align="center">
   <img src="extras/N64xCart-Dumper.png" alt="N64xCart-Dumper assembled board" width="720">
 </p>
+
 ## Project Status
 
 This repository contains:
 
 - `firmware/N64xCartDumper/` - RP2040 firmware adapted for the N64xCart Dumper board.
-- `hardware/PCB/` - KiCad schematic and PCB layout.
-- `hardware/production/` - production files for PCB manufacturing.
+- `hardware-v2.1/` - current and recommended KiCad and production files.
+- `hardware-v1.1/` - legacy hardware files, retained for reference only.
 - `extras/` - extra project files, if any.
 
 The device appears to the computer as a USB mass storage device. The virtual FAT16 disk exposes N64 cartridge data and save data files such as ROM, EEPROM, SRAM and FlashRAM where supported by the firmware.
@@ -32,12 +33,23 @@ My changes are focused on adapting the firmware and hardware layout for the N64x
 
 The hardware in this repository was redrawn and laid out for the N64xCart Dumper form factor while following the DreamDumper64 hardware principles.
 
-Current hardware files:
+> [!IMPORTANT]
+> **Use hardware v2.1 for all new DIY builds. Do not build hardware v1.1.** Version 1.1 does not support reading CIC chip information from N64 cartridges or reading EEPROM save data. Hardware v2.1 resolves these limitations and is expected to be the final hardware revision. The v1.1 files remain in this repository for historical reference only.
 
-- KiCad project: `hardware/PCB/N64xCartDumper-v1.1.kicad_pro`
-- Schematic: `hardware/PCB/N64xCartDumper-v1.1.kicad_sch`
-- PCB layout: `hardware/PCB/N64xCartDumper-v1.1.kicad_pcb`
-- Production archive: `hardware/production/N64xCart-Dumper-v1.1-20260612.zip`
+<p align="center">
+  <img src="extras/N64xCart-Dumper-v2.1.jpg" alt="N64xCart Dumper v2.1 hardware rear view" width="620">
+  <br>
+  <sub><strong>N64xCart Dumper v2.1 — Rear view</strong></sub>
+</p>
+
+Current, recommended hardware files:
+
+- KiCad project: `hardware-v2.1/PCB/N64xCartDumper-v2.1.kicad_pro`
+- Schematic: `hardware-v2.1/PCB/N64xCartDumper-v2.1.kicad_sch`
+- PCB layout: `hardware-v2.1/PCB/N64xCartDumper-v2.1.kicad_pcb`
+- Production archive: `hardware-v2.1/production/N64xCart-Dumper-v2.1-20260813.zip`
+
+Legacy v1.1 files are under `hardware-v1.1/` and are not recommended for manufacturing.
 
 ## Firmware
 
@@ -71,23 +83,26 @@ Note: the included `Makefile` appears to be inherited from an earlier TinyUSB ex
 
 ## Buying a Finished Unit
 
-I also sell assembled N64xCart Dumper units on AliExpress. Buying one helps support the time spent on PCB layout, testing, assembly, enclosure design, and continued open source maintenance.
+I also sell assembled N64xCart Dumper units on AliExpress. Units sold through the product link below use the latest v2.1 hardware. Buying one helps support the time spent on PCB layout, testing, assembly, enclosure design, and continued project maintenance.
 
 - Support Us: [Product Link](https://www.aliexpress.com/item/1005012654363194.html)
 
-Thank you for supporting this project. If you build your own, improve the design, or find a bug, contributions and feedback are welcome.
+Thank you for supporting this project. If you build your own non-commercial unit, improve the design, or find a bug, contributions and feedback are welcome.
 
 ## License Notes
 
-This repository contains code and design work derived from other open source projects. Please check the original projects and bundled third-party files for their license terms:
+The original N64xCart Dumper hardware designs, documentation, and project-specific modifications are licensed for **personal and other non-commercial use only** under the terms in [`LICENSE`](LICENSE). Commercial use—including manufacturing or selling boards, assembled units, kits, or derivative products—is prohibited without prior written permission from the applicable copyright holder.
+
+This non-commercial restriction means the project is source-available, but it is not Open Source Hardware or open-source software under the commonly accepted OSI/OSHWA definitions.
+
+This repository also contains code and design work derived from third-party projects. The project-level license does not replace or restrict third-party rights. Check the original projects, file headers, and bundled license files for the terms that apply to those materials:
 
 - `DrmDmp64_mass`: https://github.com/nopjne/drmdmp64_mass
 - DreamDumper64: https://github.com/khill25/Dreamdumper
 - TinyUSB license file included at `firmware/N64xCartDumper/external/tinyusb/LICENSE`
 
-Source files inherited from `DrmDmp64_mass` include their original copyright and license headers. New N64xCart Dumper hardware files and modifications should be used with respect for the upstream projects and their licenses.
+Source files inherited from `DrmDmp64_mass` include their original copyright notices and headers. Third-party components remain the property of their respective copyright holders and are governed by their respective terms.
 
 ## Disclaimer
 
-This is an independent hobbyist/open hardware project. It is not affiliated with or endorsed by Nintendo. Use it only with cartridges and data you legally own and are allowed to back up under your local laws.
-
+This is an independent hobbyist/source-available hardware project. It is not affiliated with or endorsed by Nintendo. Use it only with cartridges and data you legally own and are allowed to back up under your local laws.

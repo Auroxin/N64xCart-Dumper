@@ -1,0 +1,81 @@
+N64xCart Dumper Non-Commercial License
+Version 1.0, 21 August 2026
+
+Copyright (c) 2026 Auroxin
+
+1. Scope
+
+This license applies only to the original portions of the N64xCart Dumper
+hardware designs, documentation, artwork, and project-specific software
+modifications for which the N64xCart Dumper project copyright holder(s) own
+the copyright (the "Licensed Material").
+
+It does not apply to third-party or upstream material included in or used by
+this repository. Such material remains governed by its original notices,
+licenses, and copyright terms. If a file or directory contains a separate
+license or copyright notice, that notice takes precedence for that material.
+
+2. Non-commercial permission
+
+Subject to this license, you may use, study, copy, modify, and share the
+Licensed Material solely for personal, educational, research, hobbyist, or
+other non-commercial purposes. You may also manufacture hardware from the
+Licensed Material solely for your own non-commercial use.
+
+If you share the Licensed Material or a modified version for a permitted
+non-commercial purpose, you must:
+
+  a. retain this license and all copyright and attribution notices;
+  b. clearly identify your modifications; and
+  c. license your modifications to the Licensed Material under these same
+     terms.
+
+3. Commercial use prohibited
+
+Unless you first obtain separate written permission from the applicable
+N64xCart Dumper project copyright holder(s), you may not use the Licensed
+Material for any purpose primarily intended for or directed toward commercial
+advantage or monetary compensation.
+
+Prohibited commercial use includes, without limitation:
+
+  a. manufacturing, selling, reselling, or distributing for payment any PCB,
+     assembled device, kit, enclosure, or derivative product based on the
+     Licensed Material;
+  b. selling or licensing copies or modified versions of the Licensed
+     Material;
+  c. using the Licensed Material to provide a paid product or service; and
+  d. using the Licensed Material in advertising, sponsorship, or other
+     monetized activity.
+
+Charging only for materials, manufacturing, shipping, or other costs is still
+commercial use and requires prior written permission.
+
+The copyright holder(s) are not restricted by this license and may use,
+license, manufacture, or sell their own work. Commercial permissions granted
+to another party must be in writing.
+
+4. No trademark license
+
+This license does not grant permission to use the N64xCart Dumper name, logos,
+or other marks to imply endorsement, sponsorship, or an official product.
+
+5. Termination
+
+Your rights under this license terminate automatically if you fail to comply
+with its terms. The copyright holder(s) may reinstate those rights in writing.
+
+6. No warranty; limitation of liability
+
+THE LICENSED MATERIAL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. TO THE MAXIMUM EXTENT
+PERMITTED BY LAW, THE COPYRIGHT HOLDER(S) SHALL NOT BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY ARISING FROM OR RELATED TO THE LICENSED MATERIAL OR
+ITS USE.
+
+7. Other rights
+
+No patent, trademark, or other right is granted except the copyright
+permissions expressly stated above. All rights not expressly granted are
+reserved.
